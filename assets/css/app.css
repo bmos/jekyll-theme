@@ -192,3 +192,49 @@ a.text-black:hover {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+  }
+
+  .text-black, 
+  a.text-black,
+  .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
+    color: #ffffff !important;
+  }
+
+  a.text-black:hover {
+    color: #b3b3b3 !important;
+  }
+
+  .top-article:after {
+    background-color: #1e1e1e !important;
+    opacity: 0.85;
+  }
+
+  .carousel-caption {
+    background-image: linear-gradient(to right, #0d252f 40%, transparent) !important;
+  }
+
+  .breadcrumb {
+    background-color: #1e1e1e !important;
+  }
+
+  .highlight {
+    background-color: #1e1e1e !important;
+    color: #f8f8f2;
+  }
+  
+  .highlight .hll { background-color: #3e3d32 }
+  .highlight .c, .highlight .cm, .highlight .c1, .highlight .cs { color: #75715e } /* Muted comments */
+  .highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr { color: #66d9ef; font-weight: bold } /* Keywords = cyan */
+  .highlight .o { color: #f92672; font-weight: bold } /* Operators = pink */
+  .highlight .s, .highlight .s2, .highlight .s1, .highlight .sb, .highlight .sc, .highlight .sd { color: #e6db74 } /* Strings = yellow */
+  .highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #ae81ff } /* Numbers = purple */
+  .highlight .nf { color: #a6e22e } /* Functions = green */
+  .highlight .nt { color: #f92672 } /* Tags = pink */
+  .highlight .w { background-color: transparent }
+}
